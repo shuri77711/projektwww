@@ -635,3 +635,11 @@ width: 100%;
 margin: auto;
 
 }
+
+#logoo {
+    display: flex;
+    height: 90px;
+    width: 90px;
+    float: right;
+    
+}
