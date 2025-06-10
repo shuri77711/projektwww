@@ -14,17 +14,17 @@ Strona internetowa umożliwiająca adopcję zwierząt ze schroniska. Projekt zaw
 
 ## Funkcje
 
-✅ **Katalog zwierząt**  
+**Katalog zwierząt**  
 - Filtrowanie (typ, wiek, rozmiar, płeć)
 - Sortowanie (data dodania, wiek, imię)
 - Karty zwierząt ze zdjęciami i informacjami
 
-✅ **Formularz adopcyjny**  
+**Formularz adopcyjny**  
 - Zgłoszenie online
 - Walidacja danych
 - Potwierdzenie wysłania
 
-✅ **Dodatkowe funkcje**  
+**Dodatkowe funkcje**  
 - Tryb ciemny/jasny
 - Responsywny design
 - Sekcja FAQ (akordeon)
