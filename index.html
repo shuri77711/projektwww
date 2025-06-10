@@ -379,7 +379,7 @@
 
     <script src="scripts/main.js" type="module"></script>
     <script>
-    // ----- Kod dla akordeonu (pozostaje bez zmian) -----
+    // akordeon dla pytań
     document.querySelectorAll('.accordion-header').forEach(button => {
         button.addEventListener('click', () => {
             const content = button.nextElementSibling;
@@ -399,7 +399,7 @@
         });
     });
 
-    // ----- Kod dla przełącznika motywu (pozostaje bez zmian) -----
+    // przełącznik
     const toggleButton = document.getElementById("theme-toggle");
     const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
     if (localStorage.getItem("theme") === "dark" || (!localStorage.getItem("theme") && prefersDark)) {
@@ -413,7 +413,7 @@
     });
     toggleButton.innerHTML = document.body.classList.contains("dark-mode") ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
 
-    // ----- Kod dla formularza adopcyjnego (pozostaje bez zmian) -----
+    //formularz
     document.querySelectorAll('.adopt-btn').forEach(button => {
         button.addEventListener('click', function () {
             const animalId = this.getAttribute('data-animal-id');
@@ -425,7 +425,7 @@
         });
     });
 
-    // ----- NOWY KOD DLA WYSZUKIWANIA I SORTOWANIA -----
+    // wyszukiwanie i sortowanie
     document.addEventListener('DOMContentLoaded', () => {
         const searchForm = document.getElementById('search-form');
         const sortBySelect = document.getElementById('sort-by');
@@ -433,7 +433,7 @@
         const allAnimals = Array.from(animalsGrid.querySelectorAll('.animal-card'));
 
         function filterAndSortAnimals() {
-            // Pobierz aktualne wartości filtrów
+            //aktualne wartosci filtrow
             const filters = {
                 type: document.getElementById('animal-type').value,
                 age: document.getElementById('age').value,
@@ -441,21 +441,21 @@
                 gender: document.getElementById('gender').value
             };
 
-            // Odfiltruj zwierzęta
+            // filtrowanie
             let filteredAnimals = allAnimals.filter(animal => {
                 const animalData = animal.dataset;
                 const animalAge = parseFloat(animalData.age);
 
-                // Sprawdzenie typu
+           
                 const typeMatch = filters.type === 'all' || animalData.type === filters.type;
 
-                // Sprawdzenie płci
+               
                 const genderMatch = filters.gender === 'all' || animalData.gender === filters.gender;
 
-                // Sprawdzenie rozmiaru
+            
                 const sizeMatch = filters.size === 'all' || animalData.size === filters.size;
 
-                // Sprawdzenie wieku
+              
                 let ageMatch = filters.age === 'all';
                 if (!ageMatch) {
                     switch (filters.age) {
@@ -474,7 +474,7 @@
                 return typeMatch && genderMatch && sizeMatch && ageMatch;
             });
 
-            // Posortuj odfiltrowane zwierzęta
+       
             const sortBy = sortBySelect.value;
             filteredAnimals.sort((a, b) => {
                 const dataA = a.dataset;
@@ -491,7 +491,7 @@
                 }
             });
             
-            // Wyczyść siatkę i wstaw posortowane/przefiltrowane zwierzęta
+
             animalsGrid.innerHTML = '';
             if (filteredAnimals.length > 0) {
                 filteredAnimals.forEach(animal => animalsGrid.appendChild(animal));
@@ -500,18 +500,18 @@
             }
         }
 
-        // Nasłuchuj na zdarzenia formularza i sortowania
+
         searchForm.addEventListener('submit', (e) => {
             e.preventDefault();
             filterAndSortAnimals();
         });
         
-        // Uruchom filtrowanie również po zmianie opcji sortowania
+
         sortBySelect.addEventListener('change', filterAndSortAnimals);
 
-        // Obsługa przycisku "Wyczyść"
+
         searchForm.addEventListener('reset', () => {
-            // Daj przeglądarce chwilę na zresetowanie pól przed ponownym filtrowaniem
+
             setTimeout(filterAndSortAnimals, 0);
         });
     });
