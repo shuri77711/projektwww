@@ -1,23 +1,49 @@
 # Adoptuj Przyjaciela - Katalog Zwierząt do Adopcji
 
-![Logo projektu](images/logoprojekt3.png)
+![Przykładowe zwierzę](https://via.placeholder.com/800x400?text=Adoptuj+Przyjaciela)
 
+Strona internetowa umożliwiająca adopcję zwierząt ze schroniska. Projekt zawiera katalog zwierząt, formularz adopcyjny oraz informacje o organizacji.
 
+## Spis treści
+- [Funkcje](#funkcje)
+- [Technologie](#technologie)
+- [Instalacja](#instalacja)
+- [Konfiguracja](#konfiguracja)
+- [Użycie](#użycie)
+- [Licencja](#licencja)
 
-## 📌 Opis projektu
+## Funkcje
 
-Portal umożliwiający przeglądanie i adopcję zwierząt ze schronisk. Projekt zawiera:
+✅ **Katalog zwierząt**  
+- Filtrowanie (typ, wiek, rozmiar, płeć)
+- Sortowanie (data dodania, wiek, imię)
+- Karty zwierząt ze zdjęciami i informacjami
 
-- Katalog zwierząt z filtrowaniem i sortowaniem
-- Formularz adopcyjny z walidacją
+✅ **Formularz adopcyjny**  
+- Zgłoszenie online
+- Walidacja danych
+- Potwierdzenie wysłania
+
+✅ **Dodatkowe funkcje**  
 - Tryb ciemny/jasny
-- W pełni responsywny interfejs
+- Responsywny design
+- Sekcja FAQ (akordeon)
+- Polityka prywatności i regulamin
 
-## 🛠 Technologie
+## Technologie
 
 - **Frontend**:
-  ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?logo=html5&logoColor=white)
-  ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?logo=css3&logoColor=white)
-  ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black)
-  
+  - HTML5, CSS3, JavaScript
+  - Font Awesome (ikony)
+  - Responsive Web Design
 
+- **Narzędzia developerskie**:
+  - Git
+  - Visual Studio Code
+
+## Instalacja
+
+1. Sklonuj repozytorium:
+   ```bash
+   git clone https://github.com/twojanazwa/projektwww.git
+   cd projektwww
