@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Zwierząt do Adopcji</title>
+    <meta name="description" content="Znajdź swojego wymarzonego pupila w naszym katalogu zwierząt do adopcji">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<div class="animated-bg"></div>
+ <section id="home"></section>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Adoptuj Przyjaciela</h1>
+            <nav class="main-nav">
+                <button class="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="#home">Strona główna</a></li>
+                    <li><a href="#animals">Zwierzęta</a></li>
+                    <li><a href="#faq">o nas</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                    <li><button id="theme-toggle" aria-label="Zmień tryb na ciemny">
+                        <i class="fas fa-moon"></i>
+                    </button></li>
+                </ul>
+            </nav>
+            
+        </div>
+    </header>
+
+    <main class="main-content">
+        
+        <section id="search-section" class="search-section">
+            <div class="container">
+                
+                <form id="search-form" class="search-form">
+                    <div class="form-group">
+                        <label for="animal-type">Typ zwierzęcia:</label>
+                        <select class="wybory" id="animal-type" name="animal-type">
+                            <option value="all">Wszystkie</option>
+                            <option value="dog">Pies</option>
+                            <option value="cat">Kot</option>
+                            <option value="other">Inne</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="age">Wiek:</label>
+                        <select class="wybory" id="age" name="age">
+                            <option value="all">Dowolny</option>
+                            <option value="young">Młody (0-2 lata)</option>
+                            <option value="adult">Dorosły (3-8 lat)</option>
+                            <option value="senior">Senior (9+ lat)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="size">Rozmiar:</label>
+                        <select class="wybory" id="size" name="size">
+                            <option value="all">Dowolny</option>
+                            <option value="small">Mały</option>
+                            <option value="medium">Średni</option>
+                            <option value="large">Duży</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gender">Płeć:</label>
+                        <select class="wybory" id="gender" name="gender">
+                            <option value="all">Dowolna</option>
+                            <option value="male">Samiec</option>
+                            <option value="female">Samica</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn">Szukaj</button>
+                    <button type="reset" class="btn btn-secondary">Wyczyść</button>
+                </form>
+                
+            </div>
+        </section>
+
+        <section id="animals" class="animals-section">
+            <div class="container2">
+                
+                <div class="section-header">
+                    <h2>Zwierzeta do adopcji</h2>
+                    <div class="sort-options">
+                        <label for="sort-by">Sortuj według:</label>
+                        <select id="sort-by" name="sort-by">
+                            <option value="date-added">Data dodania</option>
+                            <option value="age">Wiek</option>
+                            <option value="name">Imię</option>
+                        </select>
+                    </div>
+                    <img class="logo" src="images/logoprojekt2.png" alt="logoadopotujprzyjaciela" width="185" height="185">
+                </div>
+
+                <div class="animals-grid" id="animals-grid">
+    <div class="animal-card" data-id="001" data-type="dog" data-age="3" data-size="medium" data-gender="male" data-name="Burek">
+        <img src="https://th.bing.com/th/id/OIP.W_MxtObooQJYxFJBn2Y4lAHaE7?cb=iwc2&rs=1&pid=ImgDetMain" alt="Pies - Burek" class="animal-img">
+        <div class="animal-info">
+            <h3>Burek</h3>
+            <p>Typ: Pies</p>
+            <p>Wiek: 3 lata</p>
+            <p>Rozmiar: Średni</p>
+            <p>Płeć: Samiec</p>
+            <button class="btn adopt-btn" data-animal-id="001">Adoptuj</button>
+        </div>
+    </div>
+
+    <div class="animal-card" data-id="002" data-type="cat" data-age="1" data-size="medium" data-gender="male" data-name="Płatek">
+        <img src="https://tinyhouseblog.com/wp-content/uploads/2016/06/2016-02-06-15.58.28-e1466905315645.jpg" alt="Kot - Płatek" class="animal-img">
+        <div class="animal-info">
+            <h3>Płatek</h3>
+            <p>Typ: Kot</p>
+            <p>Wiek: 1 lata</p>
+            <p>Rozmiar: Średni</p>
+            <p>Płeć: Samiec</p>
+            <button class="btn adopt-btn" data-animal-id="002">Adoptuj</button>
+        </div>
+    </div>
+
+    <div class="animal-card" data-id="003" data-type="cat" data-age="2" data-size="medium" data-gender="male" data-name="Knopers">
+        <img src="https://puszatek.pl/pictures/pets/fa6a1957-a80a-48c4-bfde-b9f6f837f887.jpeg" alt="Kot - Knopers" class="animal-img">
+        <div class="animal-info">
+            <h3>Knopers</h3>
+            <p>Typ: Kot</p>
+            <p>Wiek: 2 lata</p>
+            <p>Rozmiar: Średni</p>
+            <p>Płeć: Samiec</p>
+            <button class="btn adopt-btn" data-animal-id="003">Adoptuj</button>
+        </div>
+    </div>
+
+    <div class="animal-card" data-id="004" data-type="dog" data-age="1" data-size="medium" data-gender="male" data-name="Pitek">
+        <img src="https://puszatek.pl/pictures/pets/178aac0e-85dd-4107-a606-d3f307dabe19.jpeg" alt="Pies - Pitek" class="animal-img">
+        <div class="animal-info">
+            <h3>Pitek</h3>
+            <p>Typ: Pies</p>
+            <p>Wiek: 1 lata</p>
+            <p>Rozmiar: Średni</p>
+            <p>Płeć: Samiec</p>
+            <button class="btn adopt-btn" data-animal-id="004">Adoptuj</button>
+        </div>
+    </div>
+
+    <div class="animal-card" data-id="005" data-type="cat" data-age="1.5" data-size="large" data-gender="male" data-name="Bąbel">
+        <img src="https://preview.redd.it/r6znt181lqe71.jpg?width=1080&crop=smart&auto=webp&s=b1e135fa8126b9cb5dd17a2eed3c76392a4bfe49" alt="Kot - Bąbel" class="animal-img">
+        <div class="animal-info">
+            <h3>Bąbel</h3>
+            <p>Typ: Kot</p>
+            <p>Wiek: 1,5 lata</p>
+            <p>Rozmiar: Duży</p>
+            <p>Płeć: Samiec</p>
+            <button class="btn adopt-btn" data-animal-id="005">Adoptuj</button>
+        </div>
+    </div>
+
+    <div class="animal-card" data-id="006" data-type="dog" data-age="2" data-size="small" data-gender="male" data-name="Mati">
+        <img src="https://th.bing.com/th/id/OIP.GDSc-MqCY34MJ0tC60phHQHaFS?cb=iwc2&rs=1&pid=ImgDetMain" alt="Pies - Mati" class="animal-img">
+        <div class="animal-info">
+            <h3>Mati</h3>
+            <p>Typ: Pies</p>
+            <p>Wiek: 2 lata</p>
+            <p>Rozmiar: Mały</p>
+            <p>Płeć: Samiec</p>
+            <button class="btn adopt-btn" data-animal-id="006">Adoptuj</button>
+        </div>
+    </div>
+
+    <div class="animal-card" data-id="007" data-type="dog" data-age="5" data-size="medium" data-gender="male" data-name="Smutas">
+        <img src="https://th.bing.com/th/id/R.9134726ca00c25e159b5bf55eebea5bd?rik=uGiaRdG813mk3A&riu=http%3a%2f%2fwww.tapeciarnia.pl%2ftapety%2fnormalne%2f198331_buldog_angielski_roslinnosc_portret.jpg&ehk=XrK71l8%2fHbbIWYEx7Mx80%2b%2b6h9Qh0Bpadx8%2fcfjt7M8%3d&risl=&pid=ImgRaw&r=0" alt="Pies - Smutas" class="animal-img">
+        <div class="animal-info">
+            <h3>Smutas</h3>
+            <p>Typ: Pies</p>
+            <p>Wiek: 5 lata</p>
+            <p>Rozmiar: Średni</p>
+            <p>Płeć: Samiec</p>
+            <button class="btn adopt-btn" data-animal-id="007">Adoptuj</button>
+        </div>
+    </div>
+
+    <div class="animal-card" data-id="008" data-type="dog" data-age="4" data-size="large" data-gender="female" data-name="Viola">
+        <img src="https://psy-pies.com/pliki/image/artykuly/psy/duze/owczarek-niemiecki-krotkowlosy1087.jpg" alt="Pies - Viola" class="animal-img">
+        <div class="animal-info">
+            <h3>Viola</h3>
+            <p>Typ: Pies</p>
+            <p>Wiek: 4 lata</p>
+            <p>Rozmiar: Duży</p>
+            <p>Płeć: Samica</p>
+            <button class="btn adopt-btn" data-animal-id="008">Adoptuj</button>
+        </div>
+    </div>
+
+    <div class="animal-card" data-id="009" data-type="cat" data-age="8" data-size="small" data-gender="male" data-name="Mentos">
+        <img src="https://puszatek.pl/pictures/pets/08502ef2-b34c-4770-b5c5-477927cd2830.jpeg" alt="Kot - Mentos" class="animal-img">
+        <div class="animal-info">
+            <h3>Mentos</h3>
+            <p>Typ: Kot</p>
+            <p>Wiek: 8 lata</p>
+            <p>Rozmiar: Mały</p>
+            <p>Płeć: Samiec</p>
+            <button class="btn adopt-btn" data-animal-id="009">Adoptuj</button>
+        </div>
+    </div>
+
+    <div class="animal-card" data-id="010" data-type="cat" data-age="2.5" data-size="small" data-gender="male" data-name="Moli">
+        <img src="https://puszatek.pl/pictures/pets/fb8ea0cc-d9f5-4041-a07c-4f24cffbc0a5.jpeg" alt="Kot - Moli" class="animal-img">
+        <div class="animal-info">
+            <h3>Moli</h3>
+            <p>Typ: Kot</p>
+            <p>Wiek: 2,5 lata</p>
+            <p>Rozmiar: Mały</p>
+            <p>Płeć: Samiec</p>
+            <button class="btn adopt-btn" data-animal-id="010">Adoptuj</button>
+        </div>
+    </div>
+
+    <div class="animal-card" data-id="011" data-type="cat" data-age="1.5" data-size="small" data-gender="female" data-name="Nika">
+        <img src="https://puszatek.pl/pictures/pets/9f9aeef5-8a28-419c-a86e-c8e4a9ecf5ef.jpeg" alt="Kot - Nika" class="animal-img">
+        <div class="animal-info">
+            <h3>Nika</h3>
+            <p>Typ: Kot</p>
+            <p>Wiek: 1,5 lata</p>
+            <p>Rozmiar: Mały</p>
+            <p>Płeć: Samica</p>
+            <button class="btn adopt-btn" data-animal-id="011">Adoptuj</button>
+        </div>
+    </div>
+
+    <div class="animal-card" data-id="012" data-type="other" data-age="1.5" data-size="medium" data-gender="male" data-name="Alfons">
+        <img src="https://kroliki.net/media/filer_public_thumbnails/filer_public/3c/2c/3c2cb273-3cad-4ab3-b190-e817c5ddd6de/486059187_3738104656336053_1686427628087447826_n_1.jpg__800x600_q85_crop_subsampling-2.jpg" alt="Królik - Alfons" class="animal-img">
+        <div class="animal-info">
+            <h3>Alfons</h3>
+            <p>Typ: Królik</p>
+            <p>Wiek: 1,5 lata</p>
+            <p>Rozmiar: Średni</p>
+            <p>Płeć: Samiec</p>
+            <button class="btn adopt-btn" data-animal-id="012">Adoptuj</button>
+        </div>
+    </div>
+
+    <div class="animal-card" data-id="013" data-type="other" data-age="2.5" data-size="medium" data-gender="male" data-name="Ludwik">
+        <img src="https://static1.freeads.co.uk/img/628x470/ac98d65ebb51f5edc739340b5e715807949b2dc653829.jpg" alt="Królik - Ludwik" class="animal-img">
+        <div class="animal-info">
+            <h3>Ludwik</h3>
+            <p>Typ: Królik</p>
+            <p>Wiek: 2,5 lata</p>
+            <p>Rozmiar: Średni</p>
+            <p>Płeć: Samiec</p>
+            <button class="btn adopt-btn" data-animal-id="013">Adoptuj</button>
+        </div>
+    </div>
+
+    <div class="animal-card" data-id="014" data-type="dog" data-age="3.5" data-size="medium" data-gender="female" data-name="Luna">
+        <img src="https://puszatek.pl/pictures/pets/bcdf0072-bc92-4524-8d9d-d6967f8061d3.jpeg" alt="Pies - Luna" class="animal-img">
+        <div class="animal-info">
+            <h3>Luna</h3>
+            <p>Typ: Pies</p>
+            <p>Wiek: 3,5 lata</p>
+            <p>Rozmiar: Średni</p>
+            <p>Płeć: Samica</p>
+            <button class="btn adopt-btn" data-animal-id="014">Adoptuj</button>
+        </div>
+    </div>
+
+    <div class="animal-card" data-id="015" data-type="cat" data-age="34" data-size="large" data-gender="male" data-name="Bożydar">
+        <img src="https://preview.redd.it/recently-adopted-this-cat-v0-2hfz8taj0r4e1.jpeg?width=640&crop=smart&auto=webp&s=33e2dd595a4c0f246c3a4d354d86272592be2229" alt="Kot - Bożydar" class="animal-img">
+        <div class="animal-info">
+            <h3>Bożydar</h3>
+            <p>Typ: Kot?</p>
+            <p>Wiek: 34 lata</p>
+            <p>Rozmiar: Duży</p>
+            <p>Płeć: Samiec</p>
+            <button  id="scroll" class="btn adopt-btn" data-animal-id="015">Adoptuj</button>
+        </div>
+    </div>
+</div>
+            </div>
+        </section>
+
+       <div id="formularz-adopcyjny" style="display: none; padding: 20px; background: #f0f0f0; border-radius: 10px; max-width: 600px; margin: 30px auto;">
+            <h2>Zgłoszenie adopcyjne</h2>
+            <form id="formularz">
+              <label>Imię i nazwisko*<br><input class="formularz" type="text" required></label>
+              <label>Email*<br><input class="formularz" type="email" required></label>
+              <label>Telefon*<br><input class="formularz" type="tel" required></label>
+              <label>ID zwierzęcia*<br><input  class="formularz" type="text" id="id-zwierzecia" readonly required></label><br>
+              <label>Dlaczego chcesz adoptować to zwierzę?*<br>
+                <textarea id="textarea-1" rows="3" required></textarea>
+              </label><br><br>
+              <label><input type="checkbox" required> Akceptuję regulamin adopcji*</label><br><br>
+              <button class="btn" type="submit">Wyślij zgłoszenie</button>
+            </form>
+        </div>
+
+        <section id="faq" class="faq-section">
+            <div id="pytania" class="container2">
+                <h2 style="margin-left: 182px;">Najczęściej zadawane pytania</h2>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            Jakie są wymagania adopcyjne? <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Wymagania różnią się w zależności od zwierzęcia. Podstawowe wymagania to: ukończone 18 lat, stabilna sytuacja życiowa, zgoda wszystkich domowników na adopcję oraz możliwość zapewnienia zwierzęciu odpowiednich warunków.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            Ile kosztuje adopcja? <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Adopcja jest bezpłatna, ale wymagana jest dobrowolna darowizna na rzecz schroniska, która pomaga nam utrzymać inne zwierzęta. Zwierzęta są wysterylizowane/kastrowane, zaszczepione i odrobaczone.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            Czy można adoptować zwierzę w prezencie? <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Nie adoptujemy zwierząt "w prezencie". Osoba, która będzie opiekunem zwierzęcia, musi osobiście wziąć udział w procesie adopcyjnym i wyrazić świadomą zgodę na przyjęcie zwierzęcia pod swoją opiekę.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<section id="contact">
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Kontakt</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> ul. Zwierzęca 123, 00-001 Warszawa</p>
+                    <p><i class="fas fa-phone"></i> +48 123 456 789</p>
+                    <p><i class="fas fa-envelope"></i> kontakt@adoptujprzyjaciela.pl</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Godziny otwarcia</h3>
+                    <p>Pon-Pt: 10:00 - 18:00</p>
+                    <p>Sob: 10:00 - 16:00</p>
+                    <p>Niedz: Zamknięte</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Social Media</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/p/Wolontariat-Schronisko-dla-Zwierząt-w-Białymstoku-100064838132569/?locale=pl_PL" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/schronisko_dolina_dolistowki/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwij1ZqKsMaNAxUvgv0HHbUwOd8QFnoECB4QAQ&url=https%3A%2F%2Fx.com%2Fschroniskobydg&usg=AOvVaw3XvTyo8qK6tDGNvHljrj0A&opi=89978449" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2023 Adoptuj Przyjaciela. Wszystkie prawa zastrzeżone.</p>
+                <p><a href="#">Polityka prywatności</a> | <a href="#">Regulamin</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" aria-label="Zamknij">&times;</button>
+            <div class="modal-body" id="modal-body">
+                </div>
+        </div>
+    </div>
+</section>
+
+    <script src="scripts/main.js" type="module"></script>
+    <script>
+    // ----- Kod dla akordeonu (pozostaje bez zmian) -----
+    document.querySelectorAll('.accordion-header').forEach(button => {
+        button.addEventListener('click', () => {
+            const content = button.nextElementSibling;
+            document.querySelectorAll('.accordion-content').forEach(item => {
+                if (item !== content) {
+                    item.style.maxHeight = null;
+                    item.previousElementSibling.classList.remove('active');
+                }
+            });
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+                button.classList.remove('active');
+            } else {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                button.classList.add('active');
+            }
+        });
+    });
+
+    // ----- Kod dla przełącznika motywu (pozostaje bez zmian) -----
+    const toggleButton = document.getElementById("theme-toggle");
+    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (localStorage.getItem("theme") === "dark" || (!localStorage.getItem("theme") && prefersDark)) {
+        document.body.classList.add("dark-mode");
+    }
+    toggleButton.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+        const isDark = document.body.classList.contains("dark-mode");
+        localStorage.setItem("theme", isDark ? "dark" : "light");
+        toggleButton.innerHTML = isDark ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+    });
+    toggleButton.innerHTML = document.body.classList.contains("dark-mode") ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+
+    // ----- Kod dla formularza adopcyjnego (pozostaje bez zmian) -----
+    document.querySelectorAll('.adopt-btn').forEach(button => {
+        button.addEventListener('click', function () {
+            const animalId = this.getAttribute('data-animal-id');
+            const formularz = document.getElementById('formularz-adopcyjny');
+            const scroll = document.getElementById('scroll') || this;
+            document.getElementById('id-zwierzecia').value = animalId;
+            formularz.style.display = 'block';
+            scroll.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+
+    // ----- NOWY KOD DLA WYSZUKIWANIA I SORTOWANIA -----
+    document.addEventListener('DOMContentLoaded', () => {
+        const searchForm = document.getElementById('search-form');
+        const sortBySelect = document.getElementById('sort-by');
+        const animalsGrid = document.getElementById('animals-grid');
+        const allAnimals = Array.from(animalsGrid.querySelectorAll('.animal-card'));
+
+        function filterAndSortAnimals() {
+            // Pobierz aktualne wartości filtrów
+            const filters = {
+                type: document.getElementById('animal-type').value,
+                age: document.getElementById('age').value,
+                size: document.getElementById('size').value,
+                gender: document.getElementById('gender').value
+            };
+
+            // Odfiltruj zwierzęta
+            let filteredAnimals = allAnimals.filter(animal => {
+                const animalData = animal.dataset;
+                const animalAge = parseFloat(animalData.age);
+
+                // Sprawdzenie typu
+                const typeMatch = filters.type === 'all' || animalData.type === filters.type;
+
+                // Sprawdzenie płci
+                const genderMatch = filters.gender === 'all' || animalData.gender === filters.gender;
+
+                // Sprawdzenie rozmiaru
+                const sizeMatch = filters.size === 'all' || animalData.size === filters.size;
+
+                // Sprawdzenie wieku
+                let ageMatch = filters.age === 'all';
+                if (!ageMatch) {
+                    switch (filters.age) {
+                        case 'young':
+                            ageMatch = animalAge >= 0 && animalAge <= 2;
+                            break;
+                        case 'adult':
+                            ageMatch = animalAge > 2 && animalAge <= 8;
+                            break;
+                        case 'senior':
+                            ageMatch = animalAge > 8;
+                            break;
+                    }
+                }
+
+                return typeMatch && genderMatch && sizeMatch && ageMatch;
+            });
+
+            // Posortuj odfiltrowane zwierzęta
+            const sortBy = sortBySelect.value;
+            filteredAnimals.sort((a, b) => {
+                const dataA = a.dataset;
+                const dataB = b.dataset;
+
+                switch (sortBy) {
+                    case 'name':
+                        return dataA.name.localeCompare(dataB.name);
+                    case 'age':
+                        return parseFloat(dataA.age) - parseFloat(dataB.age);
+                    case 'date-added':
+                    default:
+                        return parseInt(dataA.id) - parseInt(dataB.id);
+                }
+            });
+            
+            // Wyczyść siatkę i wstaw posortowane/przefiltrowane zwierzęta
+            animalsGrid.innerHTML = '';
+            if (filteredAnimals.length > 0) {
+                filteredAnimals.forEach(animal => animalsGrid.appendChild(animal));
+            } else {
+                animalsGrid.innerHTML = '<p class="no-results">Brak zwierząt spełniających podane kryteria.</p>';
+            }
+        }
+
+        // Nasłuchuj na zdarzenia formularza i sortowania
+        searchForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            filterAndSortAnimals();
+        });
+        
+        // Uruchom filtrowanie również po zmianie opcji sortowania
+        sortBySelect.addEventListener('change', filterAndSortAnimals);
+
+        // Obsługa przycisku "Wyczyść"
+        searchForm.addEventListener('reset', () => {
+            // Daj przeglądarce chwilę na zresetowanie pól przed ponownym filtrowaniem
+            setTimeout(filterAndSortAnimals, 0);
+        });
+    });
+// Przykładowy kod do przełączania trybu
+const toggleDarkMode = () => {
+    document.body.classList.toggle('dark-mode');
+    // Można też zapisać preferencje w localStorage
+    localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+}
+
+// Sprawdzenie zapisanych preferencji przy ładowaniu strony
+if (localStorage.getItem('darkMode') === 'true') {
+    document.body.classList.add('dark-mode');
+}
+</script>
+
+</body>
+</html>

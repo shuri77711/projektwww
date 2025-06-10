@@ -1,0 +1,26 @@
+
+{
+  "animals": [
+    {
+  "type": "pies",
+  "age": 1,
+  "size": "medium",
+  "gender": "male",
+  "image": "images/dog1.jpg"
+},
+    {
+  "type": "kot",
+  "age": 2,
+  "size": "medium",
+  "gender": "male",
+  "image": "images/dog2.jpg"
+},
+    {
+  "type": "pies",
+  "age": 3,
+  "size": "medium",
+  "gender": "male",
+  "image": "images/dog3.jpg"
+}
+  ]
+}
