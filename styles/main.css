@@ -141,7 +141,7 @@ background-attachment: fixed;
     padding: 10px;
 }
 
-/* Search section */
+
 .search-section {
     background-color: var(--primary-color);
     color: white;
@@ -297,7 +297,7 @@ background-attachment: fixed;
    
     height: 20px;
 }
-/* Adoption form */
+
 .adoption-form-section {
     padding: 2rem 0;
     background-color: #f0f4f8;
@@ -343,7 +343,7 @@ textarea {
     height: 1rem;
 }
 
-/* FAQ section */
+
 .faq-section {
     padding: 2rem 0;
 }
@@ -400,7 +400,7 @@ textarea {
     transform: rotate(180deg);
 }
 
-/* Footer */
+
 .footer {
     background-color: var(--footer-bg);
     color: var(--footer-text);
@@ -459,7 +459,7 @@ textarea {
     text-decoration: none;
 }
 
-/* Modal */
+
 .modal {
     display: none;
     position: fixed;
@@ -496,7 +496,7 @@ textarea {
     color: #666;
 }
 
-/* Loading spinner */
+
 .loading-spinner {
     width: 50px;
     height: 50px;
@@ -512,7 +512,7 @@ textarea {
     100% { transform: rotate(360deg); }
 }
 
-/* Responsive styles */
+
 @media (max-width: 768px) {
     .nav-list {
         position: fixed;
@@ -557,7 +557,7 @@ textarea {
     }
 }
 
-/* Toast notifications */
+
 .toast {
     position: fixed;
     bottom: 20px;
