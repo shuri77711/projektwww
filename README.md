@@ -37,6 +37,15 @@ Strona internetowa umożliwiająca adopcję zwierząt ze schroniska. Projekt zaw
   - Font Awesome (ikony)
   - Responsive Web Design
 
+## Użycie
+Przeglądaj zwierzęta używając filtrów
+
+Kliknij "Adoptuj" przy wybranym zwierzęciu
+
+Wypełnij formularz adopcyjny
+
+Wyślij zgłoszenie
+
 - **Narzędzia developerskie**:
   - Git
   - Visual Studio Code
