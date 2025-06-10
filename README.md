@@ -52,3 +52,4 @@ Wyślij zgłoszenie
 Użyta grafika do loga:
 <a href="https://www.freepik.com">designed by Freepik</a>
 <a href="https://pl.freepik.com/darmowe-wektory/plaska-konstrukcja-sylwetka-psa-i-kota_49591153.htm">Płaska konstrukcja sylwetka psa i kota</a>
+<a href="https://pb.edu.pl/siw/ksiega-identyfikacji-wizualnej/logo-uczelni/wersja-pozioma/">Logo Politechniki białostockiej</a>
