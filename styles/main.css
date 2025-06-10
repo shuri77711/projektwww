@@ -45,7 +45,10 @@ padding-top: 10px;
     margin: 0 auto;
     padding: 0 20px;
    
+}
 
+i{
+    background: none;
 }
 .container2 {
     width: 100%;
@@ -104,7 +107,6 @@ background-attachment: fixed;
     color: var(--text-color);
     font-weight: 500;
     transition: var(--transition);
-    font-size: 23px;
     background: content-box;
     background-color: var(--header-bg);
     
@@ -115,15 +117,16 @@ background-attachment: fixed;
 
 }
 
-.nav-list a, .nav-list button {
+.nav-list button {
     text-decoration: none;
     color: var(--text-color);
     font-weight: 500;
     transition: var(--transition);
-    background: none;
     border: none;
     font-size: 1rem;
     cursor: pointer;
+    background: none;
+
 }
 
 .nav-list a:hover, .nav-list button:hover {
@@ -600,6 +603,7 @@ textarea {
     --accordion-header-bg: #2c2c2c;
     --accordion-header-hover: #383838;
     --accordion-content-bg: #2c2c2c;
+  
 }
 
 body {
