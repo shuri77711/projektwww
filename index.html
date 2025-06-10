@@ -6,7 +6,6 @@
     <title>Katalog Zwierząt do Adopcji</title>
     <meta name="description" content="Znajdź swojego wymarzonego pupila w naszym katalogu zwierząt do adopcji">
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/animations.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -92,15 +91,14 @@
                 
                 <div class="section-header">
                     <h2>Zwierzeta do adopcji</h2>
-                    <div class="sort-options">
-                        <label for="sort-by">Sortuj według:</label>
+                    <label for="sort-by">Sortuj według:</label>
                         <select id="sort-by" name="sort-by">
                             <option value="date-added">Data dodania</option>
                             <option value="age">Wiek</option>
                             <option value="name">Imię</option>
                         </select>
-                    </div>
-                    <img class="logo" src="images/logoprojekt2.png" alt="logoadopotujprzyjaciela" width="185" height="185">
+                    
+                    <img class="logo" src="images/logoprojekt2.png" alt="logoadopotujprzyjaciela" width="130" height="130">
                 </div>
 
                 <div class="animals-grid" id="animals-grid">
@@ -367,7 +365,7 @@
 
             <div class="footer-bottom">
                 <p>&copy; 2023 Adoptuj Przyjaciela. Wszystkie prawa zastrzeżone.</p>
-                <p><a href="polityka.html">Polityka prywatności</a> | <a href="regulamin.html">Regulamin</a></p>
+                <p><a href="#">Polityka prywatności</a> | <a href="#">Regulamin</a></p>
             </div>
         </div>
     </footer>
@@ -526,7 +524,7 @@ const toggleDarkMode = () => {
     localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
 }
 
-// sprawdzenie zapisanych preferencji przy ładowaniu strony
+// Sprawdzenie zapisanych preferencji przy ładowaniu strony
 if (localStorage.getItem('darkMode') === 'true') {
     document.body.classList.add('dark-mode');
 }
