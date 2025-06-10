@@ -7,10 +7,8 @@ Strona internetowa umożliwiająca adopcję zwierząt ze schroniska. Projekt zaw
 ## Spis treści
 - [Funkcje](#funkcje)
 - [Technologie](#technologie)
-- [Instalacja](#instalacja)
-- [Konfiguracja](#konfiguracja)
 - [Użycie](#użycie)
-- [Licencja](#licencja)
+
 
 ## Funkcje
 
