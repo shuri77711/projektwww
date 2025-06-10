@@ -48,3 +48,6 @@ Wyślij zgłoszenie
   - Git
   - Visual Studio Code
 
+
+Użyta grafika do loga:
+<a href="https://www.freepik.com">designed by Freepik</a>
