@@ -643,3 +643,25 @@ margin: auto;
     float: right;
     
 }
+
+.modal.jestwidoczny {
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+}
+
+.error {
+  color: var(--error-color);
+  background: #ffebee;
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  margin: 1rem 0;
+}
+
+.success {
+  color: var(--success-color);
+  background: #e8f5e9;
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  margin: 1rem 0;
+}
