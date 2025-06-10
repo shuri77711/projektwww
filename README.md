@@ -48,6 +48,10 @@ Wyślij zgłoszenie
   - Git
   - Visual Studio Code
 
+## Wykonali
+Paweł Sawośko
+Kamil Rusiecki
+Bartosz Grygiewicz
 
 Użyta grafika do loga:
 <a href="https://www.freepik.com">designed by Freepik</a>
