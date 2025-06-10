@@ -1,6 +1,6 @@
 # Adoptuj Przyjaciela - Katalog Zwierząt do Adopcji
 
-![Przykładowe zwierzę](https://via.placeholder.com/800x400?text=Adoptuj+Przyjaciela)
+![Logo projektu](images/logoprojekt3.png)
 
 Strona internetowa umożliwiająca adopcję zwierząt ze schroniska. Projekt zawiera katalog zwierząt, formularz adopcyjny oraz informacje o organizacji.
 
