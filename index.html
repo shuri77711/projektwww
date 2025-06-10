@@ -526,7 +526,7 @@ const toggleDarkMode = () => {
     localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
 }
 
-// Sprawdzenie zapisanych preferencji przy ładowaniu strony
+// sprawdzenie zapisanych preferencji przy ładowaniu strony
 if (localStorage.getItem('darkMode') === 'true') {
     document.body.classList.add('dark-mode');
 }
