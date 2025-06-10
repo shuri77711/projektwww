@@ -41,9 +41,3 @@ Strona internetowa umożliwiająca adopcję zwierząt ze schroniska. Projekt zaw
   - Git
   - Visual Studio Code
 
-## Instalacja
-
-1. Sklonuj repozytorium:
-   ```bash
-   git clone https://github.com/twojanazwa/projektwww.git
-   cd projektwww
