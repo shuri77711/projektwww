@@ -6,6 +6,7 @@
     <title>Katalog Zwierząt do Adopcji</title>
     <meta name="description" content="Znajdź swojego wymarzonego pupila w naszym katalogu zwierząt do adopcji">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -13,7 +14,7 @@
  <section id="home"></section>
     <header class="header">
         <div class="container">
-            <h1 class="logo">Adoptuj Przyjaciela</h1>
+            <h1 class="logo">To Czas Adoptować Przyjaciela!</h1>
             <nav class="main-nav">
                 <button class="hamburger" aria-label="Menu">
                     <span></span>
@@ -21,24 +22,21 @@
                     <span></span>
                 </button>
                 <ul class="nav-list">
-                    <li><a href="#home">Strona główna</a></li>
-                    <li><a href="#animals">Zwierzęta</a></li>
-                    <li><a href="#faq">o nas</a></li>
-                    <li><a href="#contact">Kontakt</a></li>
+                    <li><a href="#home"><u>Strona główna</u></a></li>
+                    <li><a href="#animals"><u>Zwierzęta</u></a></li>
+                    <li><a href="#faq"><u>o nas</u></a></li>
+                    <li><a href="#contact"><u>Kontakt</u></a></li>
                     <li><button id="theme-toggle" aria-label="Zmień tryb na ciemny">
                         <i class="fas fa-moon"></i>
                     </button></li>
                 </ul>
             </nav>
-            
         </div>
     </header>
 
     <main class="main-content">
-        
         <section id="search-section" class="search-section">
             <div class="container">
-                
                 <form id="search-form" class="search-form">
                     <div class="form-group">
                         <label for="animal-type">Typ zwierzęcia:</label>
@@ -82,23 +80,21 @@
                     <button type="submit" class="btn">Szukaj</button>
                     <button type="reset" class="btn btn-secondary">Wyczyść</button>
                 </form>
-                
             </div>
         </section>
 
         <section id="animals" class="animals-section">
             <div class="container2">
-                
                 <div class="section-header">
                     <h2>Zwierzeta do adopcji</h2>
-                    <label for="sort-by">Sortuj według:</label>
+                    <div class="sort-options">
+                        <label for="sort-by">Sortuj według:</label>
                         <select id="sort-by" name="sort-by">
                             <option value="date-added">Data dodania</option>
                             <option value="age">Wiek</option>
                             <option value="name">Imię</option>
                         </select>
-                    
-                    <img class="logo" src="images/logoprojekt2.png" alt="logoadopotujprzyjaciela" width="130" height="130">
+                    </div>
                 </div>
 
                 <div class="animals-grid" id="animals-grid">
@@ -285,9 +281,10 @@
             </div>
         </section>
 
-       <div id="formularz-adopcyjny" style="display: none; padding: 20px; background: #f0f0f0; border-radius: 10px; max-width: 600px; margin: 30px auto;">
-            <h2>Zgłoszenie adopcyjne</h2>
+       <div id="formularz-adopcyjny">
+            
             <form id="formularz">
+                <h2>Zgłoszenie adopcyjne</h2>
               <label>Imię i nazwisko*<br><input class="formularz" type="text" required></label>
               <label>Email*<br><input class="formularz" type="email" required></label>
               <label>Telefon*<br><input class="formularz" type="tel" required></label>
@@ -422,7 +419,7 @@
             const formularz = document.getElementById('formularz-adopcyjny');
             const scroll = document.getElementById('scroll') || this;
             document.getElementById('id-zwierzecia').value = animalId;
-            formularz.style.display = 'block';
+            document.getElementById('formularz').style.display = 'block';
             scroll.scrollIntoView({ behavior: 'smooth' });
         });
     });
@@ -517,17 +514,7 @@
             setTimeout(filterAndSortAnimals, 0);
         });
     });
-// Przykładowy kod do przełączania trybu
-const toggleDarkMode = () => {
-    document.body.classList.toggle('dark-mode');
-    // Można też zapisać preferencje w localStorage
-    localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
-}
 
-// Sprawdzenie zapisanych preferencji przy ładowaniu strony
-if (localStorage.getItem('darkMode') === 'true') {
-    document.body.classList.add('dark-mode');
-}
 </script>
 
 </body>
